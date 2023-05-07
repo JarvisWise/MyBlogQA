@@ -99,7 +99,7 @@
         <div class="col-sm-3 sidenav">
         </div>
         <div class="col-sm-6 text-center my-login">
-            <h1>Sign In</h1>
+            <h1>Log In</h1>
             <c:if test="${not empty ExceptionMessage}">
             <div class="alert alert-danger">
                 <label >${ExceptionMessage}</label>

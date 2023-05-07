@@ -128,6 +128,6 @@
         </div>
     </div>
 </div>
-<jsp:include page="footer.jsp" />
+<jsp:include page="blog-footer.jsp" />
 </body>
 </html>
