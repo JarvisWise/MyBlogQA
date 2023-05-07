@@ -1,6 +1,6 @@
 # Блог (Too Simple Blog)
 Репозиторій [Too Simple Blog](https://github.com/JarvisWise/MyBlogQA.git).
-Цей блог було розроблено з використанням Java, Spring Framework, JSP, Oracle Database та WebLogic Server. 
+Цей блог було розроблено з використанням Java, Spring Framework, JSP, Oracle Database, Maven та WebLogic Server. 
 Даний блог надає можливості перегляду та створення постів/коментарів лише авторизованим користувачам. Він призначений для публікації постів, їх перегляду та коментуванню, також користувач має можливість давати відповіді на коментарі. 
 
 ## Інтерфейс
