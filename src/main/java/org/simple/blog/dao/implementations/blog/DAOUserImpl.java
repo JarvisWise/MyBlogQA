@@ -215,4 +215,18 @@ public class DAOUserImpl extends Oracle implements DAOUser {
             disconnect();
         }
     }
+
+    @Override
+    public void deleteUserByEmail(String email) {
+        try {
+            connect();
+            statement = connection.prepareStatement(Query.DELETE_USER_BY_EMAIL.getQuery());
+            statement.setString(1, email);
+            statement.execute();
+        } catch (SQLException e) {
+            logger.warn(e);
+        } finally {
+            disconnect();
+        }
+    }
 }

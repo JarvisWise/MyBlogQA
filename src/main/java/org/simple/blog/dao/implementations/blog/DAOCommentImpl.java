@@ -167,4 +167,18 @@ public class DAOCommentImpl extends Oracle implements DAOComment {
         List<BlogComment> blogComments = getCommentsByPostId(postId);
         return getCommentSetList(blogComments);
     }
+
+    @Override
+    public void deleteCommentsByUserId(String userId) {
+        try {
+            connect();
+            statement = connection.prepareStatement(Query.DELETE_COMMENT_BY_USER_ID.getQuery());
+            statement.setInt(1, Integer.parseInt(userId));
+            statement.execute();
+        } catch (SQLException e) {
+            logger.warn(e);
+        } finally {
+            disconnect();
+        }
+    }
 }

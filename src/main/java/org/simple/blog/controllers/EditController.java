@@ -36,6 +36,8 @@ public class EditController extends AbstractController{
     private final DAOComment daoComment;
     private final DAOUser daoUser;
     private static final Logger logger = Logger.getLogger(EditController.class);
+    private final static String LOGIN_USER_EMAIL = "test.mail@gmail.com";
+    private final static String REG_USER_EMAIL = "reg.mail@gmail.com";
 
 
     @Autowired
@@ -164,4 +166,29 @@ public class EditController extends AbstractController{
         }
         return modelAndView;
     }
+
+    @RequestMapping(value = "/clean-test-user")
+    @GetMapping
+    public ModelAndView editUserCommon(HttpServletRequest request) {
+
+        ModelAndView modelAndView = new ModelAndView();
+        try {
+            BlogUser testUser = daoUser.getUserByEmail(LOGIN_USER_EMAIL);
+            daoComment.deleteCommentsByUserId(testUser.getUserId());
+            daoPost.deletePostsByUserId(testUser.getUserId());
+
+            //field update ??
+            //BlogUser testUser = daoUser.getUserByEmail(LOGIN_USER_EMAIL);
+            //daoUser.updateUserCommon(testUser.getUserId(), USER_F_DEF_NAME, USER_L_DEF_NAME, USER_DEF_AGE);
+            daoUser.deleteUserByEmail(REG_USER_EMAIL);
+
+
+        } catch (WrongEntityIdException e) {
+            logger.warn(e);
+
+        }
+        modelAndView.setViewName(LOGIN_PAGE.getPageName());
+        return modelAndView;
+    }
+
 }

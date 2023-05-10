@@ -24,4 +24,5 @@ public interface DAOPost {
     Integer getCommentsCountByPost(String postId);
     HashMap<BlogPost, String> getPostWithCommentCount(List<BlogPost> postList);
     HashMap<BlogPost, String> getPostWithCommentCount(String userId) throws WrongEntityIdException;
+    void deletePostsByUserId(String userId);
 }

@@ -17,4 +17,5 @@ public interface DAOComment {
     BlogCommentSet getCommentSet(String commentId) throws WrongEntityIdException;
     List<BlogCommentSet> getCommentSetList(List<BlogComment> list) throws WrongEntityIdException;
     List<BlogCommentSet> getCommentSetByPostId(String postId) throws WrongEntityIdException;
+    void deleteCommentsByUserId(String userId);
 }

@@ -27,10 +27,13 @@ public class Oracle implements ConnectionInterface{
             if (!AppProperties.isRead())
                 AppProperties.readProperties();
 
-            hashtable.put(Context.INITIAL_CONTEXT_FACTORY, AppProperties.getDbContextFactory());
-            hashtable.put(Context.PROVIDER_URL, AppProperties.getDbProviderUrl());
-            context = new InitialContext(hashtable);
-            dataSource = (DataSource) context.lookup(AppProperties.getDbDataSourceName());
+            if (context == null) {
+                hashtable.put(Context.INITIAL_CONTEXT_FACTORY, AppProperties.getDbContextFactory());
+                hashtable.put(Context.PROVIDER_URL, AppProperties.getDbProviderUrl());
+                context = new InitialContext(hashtable);
+                dataSource = (DataSource) context.lookup(AppProperties.getDbDataSourceName());
+            }
+
             connection = dataSource.getConnection();
         } catch (SQLException | NamingException e) {
             logger.warn(e.getMessage());

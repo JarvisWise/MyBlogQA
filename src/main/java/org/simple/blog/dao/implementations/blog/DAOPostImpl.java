@@ -256,4 +256,18 @@ public class DAOPostImpl extends Oracle implements DAOPost {
         List<BlogPost> userPosts = getPostsByUserId(userId);
         return getPostWithCommentCount(userPosts);
     }
+
+    @Override
+    public void deletePostsByUserId(String userId) {
+        try {
+            connect();
+            statement = connection.prepareStatement(Query.DELETE_POST_BY_USER_ID.getQuery());
+            statement.setInt(1, Integer.parseInt(userId));
+            statement.execute();
+        } catch (SQLException e) {
+            logger.warn(e);
+        } finally {
+            disconnect();
+        }
+    }
 }

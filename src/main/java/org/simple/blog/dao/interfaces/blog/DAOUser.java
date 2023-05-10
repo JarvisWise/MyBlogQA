@@ -17,5 +17,6 @@ public interface DAOUser {
     BlogUser getUserByToken(String token) throws WrongEntityIdException;
     BlogUser getUserByEmail(String email) throws WrongEntityIdException;
     void setNewPassword(String userId, String password) throws SQLException;
+    void deleteUserByEmail(String email);
 
 }
