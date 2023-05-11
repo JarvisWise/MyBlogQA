@@ -1,0 +1,12 @@
+{"testCaseName":"Test Cases/createCommentTest","testCaseId":"Test Cases/createCommentTest","iterationVariableName":""}
+{"testCaseName":"Test Cases/createPostTest","testCaseId":"Test Cases/createPostTest","iterationVariableName":""}
+{"testCaseName":"Test Cases/editProfile","testCaseId":"Test Cases/editProfile","iterationVariableName":""}
+{"testCaseName":"Test Cases/emptyEmailLoginTest","testCaseId":"Test Cases/emptyEmailLoginTest","iterationVariableName":""}
+{"testCaseName":"Test Cases/emptyPasswordLoginTest","testCaseId":"Test Cases/emptyPasswordLoginTest","iterationVariableName":""}
+{"testCaseName":"Test Cases/forgotPasswordFailTest","testCaseId":"Test Cases/forgotPasswordFailTest","iterationVariableName":""}
+{"testCaseName":"Test Cases/forgotPasswordSuccessTest","testCaseId":"Test Cases/forgotPasswordSuccessTest","iterationVariableName":""}
+{"testCaseName":"Test Cases/logoutTest","testCaseId":"Test Cases/logoutTest","iterationVariableName":""}
+{"testCaseName":"Test Cases/registrationFailTest","testCaseId":"Test Cases/registrationFailTest","iterationVariableName":""}
+{"testCaseName":"Test Cases/registrationSuccessTest","testCaseId":"Test Cases/registrationSuccessTest","iterationVariableName":""}
+{"testCaseName":"Test Cases/wrongEmailLoginTest","testCaseId":"Test Cases/wrongEmailLoginTest","iterationVariableName":""}
+{"testCaseName":"Test Cases/wrongPasswordLoginTest","testCaseId":"Test Cases/wrongPasswordLoginTest","iterationVariableName":""}

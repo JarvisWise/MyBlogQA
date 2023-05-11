@@ -1,0 +1,154 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+AllTests,Chrome 112.0.0.0,,,2023-05-11 00:33:34,2023-05-11 00:35:21,1m - 47.478s,PASSED
+,,,,,,,
+Test Cases/createCommentTest,Chrome 112.0.0.0,,,2023-05-11 00:33:34,2023-05-11 00:33:50,15.718s,PASSED
+"openBrowser("""")",Chrome 112.0.0.0,,,2023-05-11 00:33:35,2023-05-11 00:33:39,4.027s,PASSED
+"navigateToUrl(""http://localhost:7001/simple-blog/"")",Chrome 112.0.0.0,,,2023-05-11 00:33:39,2023-05-11 00:33:40,0.490s,PASSED
+"setText(findTestObject(""Object Repository/Page_Login Page/input_Email_loginUserName""), ""test.mail@gmail.com"")",Chrome 112.0.0.0,,,2023-05-11 00:33:40,2023-05-11 00:33:41,1.120s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Login Page/input_Password_loginPassword""), ""teO7gFeCDasckeCIEoAHxg=="")",Chrome 112.0.0.0,,,2023-05-11 00:33:41,2023-05-11 00:33:42,0.619s,PASSED
+"click(findTestObject(""Object Repository/Page_Login Page/button_Login""))",Chrome 112.0.0.0,,,2023-05-11 00:33:42,2023-05-11 00:33:43,1.122s,PASSED
+"click(findTestObject(""Object Repository/Page_Home Page/a_Create New Post""))",Chrome 112.0.0.0,,,2023-05-11 00:33:43,2023-05-11 00:33:43,0.573s,PASSED
+"setText(findTestObject(""Object Repository/Page_Create Post/input_Post name_postName""), ""New Post Name For Test 1221"")",Chrome 112.0.0.0,,,2023-05-11 00:33:43,2023-05-11 00:33:44,0.878s,PASSED
+"setText(findTestObject(""Object Repository/Page_Create Post/textarea_Post Text_postText""), ""This is test post 1221"")",Chrome 112.0.0.0,,,2023-05-11 00:33:44,2023-05-11 00:33:45,0.801s,PASSED
+"click(findTestObject(""Object Repository/Page_Create Post/button_Create Post""))",Chrome 112.0.0.0,,,2023-05-11 00:33:45,2023-05-11 00:33:46,0.591s,PASSED
+"click(findTestObject(""Object Repository/Page_Home Page/a_Show more""))",Chrome 112.0.0.0,,,2023-05-11 00:33:46,2023-05-11 00:33:46,0.606s,PASSED
+"setText(findTestObject(""Object Repository/Page_Post Page/textarea_Test User_commentText""), ""This is Test Comment 1221"")",Chrome 112.0.0.0,,,2023-05-11 00:33:46,2023-05-11 00:33:47,0.837s,PASSED
+"click(findTestObject(""Object Repository/Page_Post Page/button_Create Comment""))",Chrome 112.0.0.0,,,2023-05-11 00:33:47,2023-05-11 00:33:48,0.667s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Post Page/td_This is Test Comment 1221""), 0)",Chrome 112.0.0.0,,,2023-05-11 00:33:48,2023-05-11 00:33:48,0.481s,PASSED
+"click(findTestObject(""Object Repository/Page_Post Page/a_Logout""))",Chrome 112.0.0.0,,,2023-05-11 00:33:48,2023-05-11 00:33:49,0.739s,PASSED
+"navigateToUrl(""http://localhost:7001/simple-blog/edit/clean-test-user"")",Chrome 112.0.0.0,,,2023-05-11 00:33:49,2023-05-11 00:33:49,0.124s,PASSED
+closeBrowser(),Chrome 112.0.0.0,,,2023-05-11 00:33:49,2023-05-11 00:33:50,0.909s,PASSED
+,,,,,,,
+Test Cases/createPostTest,Chrome 112.0.0.0,,,2023-05-11 00:33:50,2023-05-11 00:34:00,10.340s,PASSED
+"openBrowser("""")",Chrome 112.0.0.0,,,2023-05-11 00:33:51,2023-05-11 00:33:53,1.794s,PASSED
+"navigateToUrl(""http://localhost:7001/simple-blog/"")",Chrome 112.0.0.0,,,2023-05-11 00:33:53,2023-05-11 00:33:53,0.413s,PASSED
+"setText(findTestObject(""Object Repository/Page_Login Page/input_Email_loginUserName""), ""test.mail@gmail.com"")",Chrome 112.0.0.0,,,2023-05-11 00:33:53,2023-05-11 00:33:54,0.856s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Login Page/input_Password_loginPassword""), ""teO7gFeCDasckeCIEoAHxg=="")",Chrome 112.0.0.0,,,2023-05-11 00:33:54,2023-05-11 00:33:54,0.566s,PASSED
+"click(findTestObject(""Object Repository/Page_Login Page/button_Login""))",Chrome 112.0.0.0,,,2023-05-11 00:33:54,2023-05-11 00:33:55,0.816s,PASSED
+"click(findTestObject(""Object Repository/Page_Home Page/a_Create New Post""))",Chrome 112.0.0.0,,,2023-05-11 00:33:55,2023-05-11 00:33:56,0.570s,PASSED
+"setText(findTestObject(""Object Repository/Page_Create Post/input_Post name_postName""), ""New Post Name For Test 1221"")",Chrome 112.0.0.0,,,2023-05-11 00:33:56,2023-05-11 00:33:57,0.830s,PASSED
+"setText(findTestObject(""Object Repository/Page_Create Post/textarea_Post Text_postText""), ""This is test post 1221"")",Chrome 112.0.0.0,,,2023-05-11 00:33:57,2023-05-11 00:33:58,0.901s,PASSED
+"click(findTestObject(""Object Repository/Page_Create Post/button_Create Post""))",Chrome 112.0.0.0,,,2023-05-11 00:33:58,2023-05-11 00:33:58,0.587s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Home Page/th_New Post Name For Test 1221""), 0)",Chrome 112.0.0.0,,,2023-05-11 00:33:58,2023-05-11 00:33:59,0.430s,PASSED
+"click(findTestObject(""Page_Home Page/a_Logout""))",Chrome 112.0.0.0,,,2023-05-11 00:33:59,2023-05-11 00:33:59,0.540s,PASSED
+"navigateToUrl(""http://localhost:7001/simple-blog/edit/clean-test-user"")",Chrome 112.0.0.0,,,2023-05-11 00:33:59,2023-05-11 00:33:59,0.124s,PASSED
+closeBrowser(),Chrome 112.0.0.0,,,2023-05-11 00:33:59,2023-05-11 00:34:00,1.127s,PASSED
+,,,,,,,
+Test Cases/editProfile,Chrome 112.0.0.0,,,2023-05-11 00:34:00,2023-05-11 00:34:17,16.178s,PASSED
+"openBrowser("""")",Chrome 112.0.0.0,,,2023-05-11 00:34:01,2023-05-11 00:34:03,1.866s,PASSED
+"navigateToUrl(""http://localhost:7001/simple-blog/"")",Chrome 112.0.0.0,,,2023-05-11 00:34:03,2023-05-11 00:34:04,0.760s,PASSED
+"setText(findTestObject(""Object Repository/Page_Login Page/input_Email_loginUserName""), ""test.mail@gmail.com"")",Chrome 112.0.0.0,,,2023-05-11 00:34:04,2023-05-11 00:34:05,0.845s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Login Page/input_Password_loginPassword""), ""teO7gFeCDasckeCIEoAHxg=="")",Chrome 112.0.0.0,,,2023-05-11 00:34:05,2023-05-11 00:34:05,0.512s,PASSED
+"click(findTestObject(""Object Repository/Page_Login Page/button_Login""))",Chrome 112.0.0.0,,,2023-05-11 00:34:05,2023-05-11 00:34:06,0.823s,PASSED
+"click(findTestObject(""Object Repository/Page_Home Page/a_Test User""))",Chrome 112.0.0.0,,,2023-05-11 00:34:06,2023-05-11 00:34:07,0.645s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Profile/h3_Profile""), 0)",Chrome 112.0.0.0,,,2023-05-11 00:34:07,2023-05-11 00:34:07,0.491s,PASSED
+"setText(findTestObject(""Object Repository/Page_Profile/input_FirstName_firstName""), ""Test2"")",Chrome 112.0.0.0,,,2023-05-11 00:34:07,2023-05-11 00:34:08,0.828s,PASSED
+"setText(findTestObject(""Object Repository/Page_Profile/input_LastName_lastName""), ""User2"")",Chrome 112.0.0.0,,,2023-05-11 00:34:08,2023-05-11 00:34:09,0.866s,PASSED
+"setText(findTestObject(""Object Repository/Page_Profile/input_Birthday_birthday""), ""2000/06/01"")",Chrome 112.0.0.0,,,2023-05-11 00:34:09,2023-05-11 00:34:10,0.806s,PASSED
+"click(findTestObject(""Object Repository/Page_Profile/button_Update Profile""))",Chrome 112.0.0.0,,,2023-05-11 00:34:10,2023-05-11 00:34:10,0.559s,PASSED
+"verifyElementPresent(findTestObject(""Page_Profile/h3_Profile""), 0)",Chrome 112.0.0.0,,,2023-05-11 00:34:10,2023-05-11 00:34:11,0.408s,PASSED
+"verifyElementAttributeValue(findTestObject(""Page_Profile/input_FirstName_firstName""), ""value"", ""Test2"", 0)",Chrome 112.0.0.0,,,2023-05-11 00:34:11,2023-05-11 00:34:11,0.471s,PASSED
+"verifyElementAttributeValue(findTestObject(""Page_Profile/input_LastName_lastName""), ""value"", ""User2"", 0)",Chrome 112.0.0.0,,,2023-05-11 00:34:11,2023-05-11 00:34:12,0.489s,PASSED
+"verifyElementAttributeValue(findTestObject(""Page_Profile/input_Birthday_birthday""), ""value"", ""2000/06/01"", 0)",Chrome 112.0.0.0,,,2023-05-11 00:34:12,2023-05-11 00:34:12,0.491s,PASSED
+"setText(findTestObject(""Object Repository/Page_Profile/input_FirstName_firstName""), ""Test"")",Chrome 112.0.0.0,,,2023-05-11 00:34:12,2023-05-11 00:34:13,0.836s,PASSED
+"setText(findTestObject(""Object Repository/Page_Profile/input_LastName_lastName""), ""User"")",Chrome 112.0.0.0,,,2023-05-11 00:34:13,2023-05-11 00:34:14,0.822s,PASSED
+"setText(findTestObject(""Object Repository/Page_Profile/input_Birthday_birthday""), ""2001/07/02"")",Chrome 112.0.0.0,,,2023-05-11 00:34:14,2023-05-11 00:34:15,0.822s,PASSED
+"click(findTestObject(""Object Repository/Page_Profile/button_Update Profile""))",Chrome 112.0.0.0,,,2023-05-11 00:34:15,2023-05-11 00:34:15,0.673s,PASSED
+"click(findTestObject(""Object Repository/Page_Profile/a_Logout""))",Chrome 112.0.0.0,,,2023-05-11 00:34:15,2023-05-11 00:34:16,0.670s,PASSED
+closeBrowser(),Chrome 112.0.0.0,,,2023-05-11 00:34:16,2023-05-11 00:34:17,0.728s,PASSED
+,,,,,,,
+Test Cases/emptyEmailLoginTest,Chrome 112.0.0.0,,,2023-05-11 00:34:17,2023-05-11 00:34:22,5.212s,PASSED
+"openBrowser("""")",Chrome 112.0.0.0,,,2023-05-11 00:34:17,2023-05-11 00:34:19,1.630s,PASSED
+"navigateToUrl(""http://localhost:7001/simple-blog/"")",Chrome 112.0.0.0,,,2023-05-11 00:34:19,2023-05-11 00:34:19,0.448s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Login Page/input_Password_loginPassword""), ""teO7gFeCDasckeCIEoAHxg=="")",Chrome 112.0.0.0,,,2023-05-11 00:34:19,2023-05-11 00:34:20,0.645s,PASSED
+"click(findTestObject(""Object Repository/Page_Login Page/button_Login""))",Chrome 112.0.0.0,,,2023-05-11 00:34:20,2023-05-11 00:34:21,0.561s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Login Page/h1_Log In""), 0)",Chrome 112.0.0.0,,,2023-05-11 00:34:21,2023-05-11 00:34:21,0.416s,PASSED
+closeBrowser(),Chrome 112.0.0.0,,,2023-05-11 00:34:21,2023-05-11 00:34:22,0.735s,PASSED
+,,,,,,,
+Test Cases/emptyPasswordLoginTest,Chrome 112.0.0.0,,,2023-05-11 00:34:22,2023-05-11 00:34:27,5.632s,PASSED
+"openBrowser("""")",Chrome 112.0.0.0,,,2023-05-11 00:34:23,2023-05-11 00:34:24,1.504s,PASSED
+"navigateToUrl(""http://localhost:7001/simple-blog/"")",Chrome 112.0.0.0,,,2023-05-11 00:34:24,2023-05-11 00:34:25,0.420s,PASSED
+"setText(findTestObject(""Object Repository/Page_Login Page/input_Email_loginUserName""), ""test.mail@gmail.com"")",Chrome 112.0.0.0,,,2023-05-11 00:34:25,2023-05-11 00:34:26,1.026s,PASSED
+"click(findTestObject(""Object Repository/Page_Login Page/button_Login""))",Chrome 112.0.0.0,,,2023-05-11 00:34:26,2023-05-11 00:34:26,0.606s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Login Page/h1_Log In""), 0)",Chrome 112.0.0.0,,,2023-05-11 00:34:26,2023-05-11 00:34:27,0.443s,PASSED
+closeBrowser(),Chrome 112.0.0.0,,,2023-05-11 00:34:27,2023-05-11 00:34:27,0.799s,PASSED
+,,,,,,,
+Test Cases/forgotPasswordFailTest,Chrome 112.0.0.0,,,2023-05-11 00:34:27,2023-05-11 00:34:33,5.999s,PASSED
+"openBrowser("""")",Chrome 112.0.0.0,,,2023-05-11 00:34:28,2023-05-11 00:34:30,1.524s,PASSED
+"navigateToUrl(""http://localhost:7001/simple-blog/"")",Chrome 112.0.0.0,,,2023-05-11 00:34:30,2023-05-11 00:34:30,0.377s,PASSED
+"click(findTestObject(""Object Repository/Page_Login Page/a_Forgot password""))",Chrome 112.0.0.0,,,2023-05-11 00:34:30,2023-05-11 00:34:31,0.626s,PASSED
+"setText(findTestObject(""Object Repository/Page_Forgot Password Page/input_Email_email""), ""wrong.mail@gmail.com"")",Chrome 112.0.0.0,,,2023-05-11 00:34:31,2023-05-11 00:34:32,0.839s,PASSED
+"click(findTestObject(""Object Repository/Page_Forgot Password Page/button_Reset Password""))",Chrome 112.0.0.0,,,2023-05-11 00:34:32,2023-05-11 00:34:32,0.664s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Forgot Password Page/label_Wrong Email""), 0)",Chrome 112.0.0.0,,,2023-05-11 00:34:32,2023-05-11 00:34:33,0.447s,PASSED
+closeBrowser(),Chrome 112.0.0.0,,,2023-05-11 00:34:33,2023-05-11 00:34:33,0.748s,PASSED
+,,,,,,,
+Test Cases/forgotPasswordSuccessTest,Chrome 112.0.0.0,,,2023-05-11 00:34:33,2023-05-11 00:34:39,5.928s,PASSED
+"openBrowser("""")",Chrome 112.0.0.0,,,2023-05-11 00:34:34,2023-05-11 00:34:36,1.457s,PASSED
+"navigateToUrl(""http://localhost:7001/simple-blog/"")",Chrome 112.0.0.0,,,2023-05-11 00:34:36,2023-05-11 00:34:36,0.366s,PASSED
+"click(findTestObject(""Object Repository/Page_Login Page/a_Forgot password""))",Chrome 112.0.0.0,,,2023-05-11 00:34:36,2023-05-11 00:34:37,0.571s,PASSED
+"setText(findTestObject(""Object Repository/Page_Forgot Password Page/input_Email_email""), ""test.mail@gmail.com"")",Chrome 112.0.0.0,,,2023-05-11 00:34:37,2023-05-11 00:34:38,0.833s,PASSED
+"click(findTestObject(""Object Repository/Page_Forgot Password Page/button_Reset Password""))",Chrome 112.0.0.0,,,2023-05-11 00:34:38,2023-05-11 00:34:38,0.744s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Forgot Password Page/label_Check your mail box""), 0)",Chrome 112.0.0.0,,,2023-05-11 00:34:38,2023-05-11 00:34:39,0.425s,PASSED
+closeBrowser(),Chrome 112.0.0.0,,,2023-05-11 00:34:39,2023-05-11 00:34:39,0.714s,PASSED
+,,,,,,,
+Test Cases/logoutTest,Chrome 112.0.0.0,,,2023-05-11 00:34:39,2023-05-11 00:34:46,6.799s,PASSED
+"openBrowser("""")",Chrome 112.0.0.0,,,2023-05-11 00:34:40,2023-05-11 00:34:42,1.510s,PASSED
+"navigateToUrl(""http://localhost:7001/simple-blog/"")",Chrome 112.0.0.0,,,2023-05-11 00:34:42,2023-05-11 00:34:42,0.380s,PASSED
+"setText(findTestObject(""Object Repository/Page_Login Page/input_Email_loginUserName""), ""test.mail@gmail.com"")",Chrome 112.0.0.0,,,2023-05-11 00:34:42,2023-05-11 00:34:43,0.849s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Login Page/input_Password_loginPassword""), ""teO7gFeCDasckeCIEoAHxg=="")",Chrome 112.0.0.0,,,2023-05-11 00:34:43,2023-05-11 00:34:44,0.578s,PASSED
+"click(findTestObject(""Object Repository/Page_Login Page/button_Login""))",Chrome 112.0.0.0,,,2023-05-11 00:34:44,2023-05-11 00:34:44,0.821s,PASSED
+"verifyElementPresent(findTestObject(""Page_Home Page/a_Create New Post""), 0)",Chrome 112.0.0.0,,,2023-05-11 00:34:44,2023-05-11 00:34:45,0.422s,PASSED
+"click(findTestObject(""Object Repository/Page_Home Page/a_Logout""))",Chrome 112.0.0.0,,,2023-05-11 00:34:45,2023-05-11 00:34:45,0.653s,PASSED
+closeBrowser(),Chrome 112.0.0.0,,,2023-05-11 00:34:45,2023-05-11 00:34:46,0.767s,PASSED
+,,,,,,,
+Test Cases/registrationFailTest,Chrome 112.0.0.0,,,2023-05-11 00:34:46,2023-05-11 00:34:56,9.934s,PASSED
+"openBrowser("""")",Chrome 112.0.0.0,,,2023-05-11 00:34:47,2023-05-11 00:34:48,1.399s,PASSED
+"navigateToUrl(""http://localhost:7001/simple-blog/"")",Chrome 112.0.0.0,,,2023-05-11 00:34:48,2023-05-11 00:34:49,0.381s,PASSED
+"click(findTestObject(""Object Repository/Page_Login Page/a_Registration""))",Chrome 112.0.0.0,,,2023-05-11 00:34:49,2023-05-11 00:34:50,0.654s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Registration page/h1_Registration""), 0)",Chrome 112.0.0.0,,,2023-05-11 00:34:50,2023-05-11 00:34:50,0.483s,PASSED
+"setText(findTestObject(""Object Repository/Page_Registration page/input_FirstName_firstName""), ""F_TEST"")",Chrome 112.0.0.0,,,2023-05-11 00:34:50,2023-05-11 00:34:51,0.904s,PASSED
+"setText(findTestObject(""Object Repository/Page_Registration page/input_LastName_lastName""), ""L_TEST"")",Chrome 112.0.0.0,,,2023-05-11 00:34:51,2023-05-11 00:34:52,0.891s,PASSED
+"setText(findTestObject(""Object Repository/Page_Registration page/input_Email_email""), ""reg.mail@gmail.com"")",Chrome 112.0.0.0,,,2023-05-11 00:34:52,2023-05-11 00:34:53,0.890s,PASSED
+"setText(findTestObject(""Object Repository/Page_Registration page/input_Birthday_birthday""), ""1999/04/15"")",Chrome 112.0.0.0,,,2023-05-11 00:34:53,2023-05-11 00:34:54,0.857s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Registration page/input_Password_password""), ""teO7gFeCDasckeCIEoAHxg=="")",Chrome 112.0.0.0,,,2023-05-11 00:34:54,2023-05-11 00:34:54,0.526s,PASSED
+"click(findTestObject(""Object Repository/Page_Registration page/button_Register""))",Chrome 112.0.0.0,,,2023-05-11 00:34:54,2023-05-11 00:34:55,0.505s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Registration page/h1_Registration""), 0)",Chrome 112.0.0.0,,,2023-05-11 00:34:55,2023-05-11 00:34:55,0.414s,PASSED
+closeBrowser(),Chrome 112.0.0.0,,,2023-05-11 00:34:55,2023-05-11 00:34:56,1.145s,PASSED
+,,,,,,,
+Test Cases/registrationSuccessTest,Chrome 112.0.0.0,,,2023-05-11 00:34:56,2023-05-11 00:35:09,12.842s,PASSED
+"openBrowser("""")",Chrome 112.0.0.0,,,2023-05-11 00:34:57,2023-05-11 00:34:58,1.367s,PASSED
+"navigateToUrl(""http://localhost:7001/simple-blog/"")",Chrome 112.0.0.0,,,2023-05-11 00:34:58,2023-05-11 00:34:59,0.449s,PASSED
+"click(findTestObject(""Object Repository/Page_Login Page/a_Registration""))",Chrome 112.0.0.0,,,2023-05-11 00:34:59,2023-05-11 00:34:59,0.664s,PASSED
+"setText(findTestObject(""Object Repository/Page_Registration page/input_FirstName_firstName""), ""F_TEST"")",Chrome 112.0.0.0,,,2023-05-11 00:34:59,2023-05-11 00:35:00,0.794s,PASSED
+"setText(findTestObject(""Object Repository/Page_Registration page/input_LastName_lastName""), ""L_TEST"")",Chrome 112.0.0.0,,,2023-05-11 00:35:00,2023-05-11 00:35:01,0.908s,PASSED
+"setText(findTestObject(""Object Repository/Page_Registration page/input_Email_email""), ""reg.mail@gmail.com"")",Chrome 112.0.0.0,,,2023-05-11 00:35:01,2023-05-11 00:35:02,0.891s,PASSED
+"setText(findTestObject(""Object Repository/Page_Registration page/input_Birthday_birthday""), ""1999/04/15"")",Chrome 112.0.0.0,,,2023-05-11 00:35:02,2023-05-11 00:35:03,0.846s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Registration page/input_Password_password""), ""teO7gFeCDasckeCIEoAHxg=="")",Chrome 112.0.0.0,,,2023-05-11 00:35:03,2023-05-11 00:35:03,0.552s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Registration page/input_Confirm password_cPassword""), ""teO7gFeCDasckeCIEoAHxg=="")",Chrome 112.0.0.0,,,2023-05-11 00:35:03,2023-05-11 00:35:04,0.549s,PASSED
+"click(findTestObject(""Object Repository/Page_Registration page/button_Register""))",Chrome 112.0.0.0,,,2023-05-11 00:35:04,2023-05-11 00:35:04,0.556s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Login Page/h1_Log In""), 0)",Chrome 112.0.0.0,,,2023-05-11 00:35:04,2023-05-11 00:35:05,0.418s,PASSED
+"setText(findTestObject(""Object Repository/Page_Login Page/input_Email_loginUserName""), ""reg.mail@gmail.com"")",Chrome 112.0.0.0,,,2023-05-11 00:35:05,2023-05-11 00:35:06,0.862s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Login Page/input_Password_loginPassword""), ""teO7gFeCDasckeCIEoAHxg=="")",Chrome 112.0.0.0,,,2023-05-11 00:35:06,2023-05-11 00:35:06,0.533s,PASSED
+"click(findTestObject(""Object Repository/Page_Login Page/button_Login""))",Chrome 112.0.0.0,,,2023-05-11 00:35:06,2023-05-11 00:35:07,0.768s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Home Page/a_Create New Post""), 0)",Chrome 112.0.0.0,,,2023-05-11 00:35:07,2023-05-11 00:35:07,0.440s,PASSED
+"click(findTestObject(""Object Repository/Page_Home Page/a_Logout""))",Chrome 112.0.0.0,,,2023-05-11 00:35:07,2023-05-11 00:35:08,0.523s,PASSED
+"navigateToUrl(""http://localhost:7001/simple-blog/edit/clean-test-user"")",Chrome 112.0.0.0,,,2023-05-11 00:35:08,2023-05-11 00:35:08,0.097s,PASSED
+closeBrowser(),Chrome 112.0.0.0,,,2023-05-11 00:35:08,2023-05-11 00:35:09,0.874s,PASSED
+,,,,,,,
+Test Cases/wrongEmailLoginTest,Chrome 112.0.0.0,,,2023-05-11 00:35:09,2023-05-11 00:35:15,5.960s,PASSED
+"openBrowser("""")",Chrome 112.0.0.0,,,2023-05-11 00:35:10,2023-05-11 00:35:11,1.445s,PASSED
+"navigateToUrl(""http://localhost:7001/simple-blog/"")",Chrome 112.0.0.0,,,2023-05-11 00:35:11,2023-05-11 00:35:12,0.452s,PASSED
+"setText(findTestObject(""Object Repository/Page_Login Page/input_Email_loginUserName""), ""wrong.mail@gmail.com"")",Chrome 112.0.0.0,,,2023-05-11 00:35:12,2023-05-11 00:35:13,0.906s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Login Page/input_Password_loginPassword""), ""teO7gFeCDasckeCIEoAHxg=="")",Chrome 112.0.0.0,,,2023-05-11 00:35:13,2023-05-11 00:35:13,0.570s,PASSED
+"click(findTestObject(""Object Repository/Page_Login Page/button_Login""))",Chrome 112.0.0.0,,,2023-05-11 00:35:13,2023-05-11 00:35:14,0.576s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Login Page/label_You entered wrong login""), 0)",Chrome 112.0.0.0,,,2023-05-11 00:35:14,2023-05-11 00:35:14,0.480s,PASSED
+closeBrowser(),Chrome 112.0.0.0,,,2023-05-11 00:35:14,2023-05-11 00:35:15,0.764s,PASSED
+,,,,,,,
+Test Cases/wrongPasswordLoginTest,Chrome 112.0.0.0,,,2023-05-11 00:35:15,2023-05-11 00:35:21,6.275s,PASSED
+"openBrowser("""")",Chrome 112.0.0.0,,,2023-05-11 00:35:16,2023-05-11 00:35:17,1.506s,PASSED
+"navigateToUrl(""http://localhost:7001/simple-blog/"")",Chrome 112.0.0.0,,,2023-05-11 00:35:17,2023-05-11 00:35:18,0.453s,PASSED
+"setText(findTestObject(""Object Repository/Page_Login Page/input_Email_loginUserName""), ""test.mail@gmail.com"")",Chrome 112.0.0.0,,,2023-05-11 00:35:18,2023-05-11 00:35:19,1.133s,PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_Login Page/input_Password_loginPassword""), ""4nvbrPglk7k="")",Chrome 112.0.0.0,,,2023-05-11 00:35:19,2023-05-11 00:35:19,0.550s,PASSED
+"click(findTestObject(""Object Repository/Page_Login Page/button_Login""))",Chrome 112.0.0.0,,,2023-05-11 00:35:19,2023-05-11 00:35:20,0.645s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Page_Login Page/label_You entered wrong password""), 0)",Chrome 112.0.0.0,,,2023-05-11 00:35:20,2023-05-11 00:35:21,0.463s,PASSED
+closeBrowser(),Chrome 112.0.0.0,,,2023-05-11 00:35:21,2023-05-11 00:35:21,0.739s,PASSED

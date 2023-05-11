@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h3_Profile</name>
+   <tag></tag>
+   <elementGuidId>6e46fa8e-2fe1-4884-9c87-e5efe717b0be</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='FirstName:'])[1]/preceding::h3[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h3</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h3</value>
+      <webElementGuid>c29a49af-981b-4c88-a731-e1a150b46df0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Profile</value>
+      <webElementGuid>f3eb8dd6-9a12-4727-b71b-7a3f7344c66e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[@class=&quot;container-fluid text-center&quot;]/div[@class=&quot;row content my-c&quot;]/div[@class=&quot;col-xs-8 col-xs-offset-2 text-left my&quot;]/div[1]/h3[1]</value>
+      <webElementGuid>1ab9ce58-a39d-490b-90df-3e7ad5d4f029</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FirstName:'])[1]/preceding::h3[1]</value>
+      <webElementGuid>7ad237f4-578e-4b41-8b1e-399b61beb81c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='LastName:'])[1]/preceding::h3[1]</value>
+      <webElementGuid>e6f57dbb-38be-45c4-a7b0-4925665df6b8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h3</value>
+      <webElementGuid>89957c4f-61ce-4685-a306-05dbb7308274</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h3[(text() = 'Profile' or . = 'Profile')]</value>
+      <webElementGuid>f53bf7f7-4830-4ed7-b3bf-277b8030de82</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

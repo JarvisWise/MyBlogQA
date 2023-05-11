@@ -99,10 +99,13 @@ public class RecordAndPlayTest {
         driver.close();
     }
 
+    //driver.findElement(By.linkText("Register")).click();
+    //registration-link
+
     @Test
     public void successRegTest() {
         driver.manage().window().maximize();
-        driver.findElement(By.linkText("Register")).click();
+        driver.findElement(By.id("registration-link")).click();
         fillRegFieldsWithoutCPassword();
         driver.findElement(By.id("cPassword")).sendKeys(REG_USER_PASSWORD);
         driver.findElement(By.cssSelector(".btn")).click();
@@ -111,14 +114,13 @@ public class RecordAndPlayTest {
         assertEquals(driver.getTitle(), HOME_PAGE);
         logout();
 
-        //delete reg_user
         cleanTestData();
     }
 
     @Test
     public void failedRegTest() {
         driver.manage().window().maximize();
-        driver.findElement(By.linkText("Register")).click();
+        driver.findElement(By.id("registration-link")).click();
         fillRegFieldsWithoutCPassword();
         driver.findElement(By.cssSelector(".btn")).click();
         assertEquals(driver.getTitle(), REG_PAGE);

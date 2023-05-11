@@ -138,9 +138,9 @@
                 <!-- button -->
                 <button type="submit" class="btn btn-block my text-left">Login</button> <!--btn-default-->
 
-                <!-- register -->
+                <!-- registration -->
                 <div class="text-center my-login-r">
-                    <p>Not a member? <a href="<c:out value="${registrationURL}"/>">Register</a></p>
+                    <p>Not a member? <a id="registration-link" href="<c:out value="${registrationURL}"/>">Register</a></p>
                 </div>
             </form>
 
