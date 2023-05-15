@@ -6,11 +6,13 @@ import org.simple.blog.dao.interfaces.blog.DAOPost;
 import org.simple.blog.dao.interfaces.blog.DAOUser;
 import org.simple.blog.entities.blog.BlogComment;
 import org.simple.blog.entities.blog.BlogPost;
+import org.simple.blog.tools.custom.exceptions.WrongEntityIdException;
 import org.simple.blog.tools.strings.AttributeName;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -34,14 +36,12 @@ public class AddController extends AbstractController{
 
     @Autowired
     public AddController(DAOPost daoPost, DAOComment daoComment, DAOUser daoUser) {
-
         this.daoPost = daoPost;
         this.daoComment = daoComment;
         this.daoUser = daoUser;
     }
 
-    @RequestMapping(value = "/post")
-    @GetMapping
+    @RequestMapping(value = "/post", method= RequestMethod.POST)
     public ModelAndView addNewPost(@RequestParam("postName") String postName,
                                     @RequestParam("postText") String postText,
                                    HttpServletRequest request) {
@@ -69,8 +69,7 @@ public class AddController extends AbstractController{
         return modelAndView;
     }
 
-    @RequestMapping(value = "/comment")
-    @GetMapping
+    @RequestMapping(value = "/comment", method= RequestMethod.POST)
     public ModelAndView addNewComment(@RequestParam("commentText") String commentText,
                                    @RequestParam("postId") String postId,
                                    @RequestParam("parentId") String parentId,
@@ -82,12 +81,13 @@ public class AddController extends AbstractController{
         String currentUserId = (String) session.getAttribute(AttributeName.CURRENT_USER_ID.getAttributeName());
 
         try {
+            BlogPost blogPost = daoPost.getPostById(postId);
             daoComment.addComment(new BlogComment(
                     null, commentText, DATE_TIME_FORMATTER.format(now),
                     currentUserId, postId, "".equals(parentId) ? null : parentId, null
             ));
-            modelAndView.setViewName("redirect:/show/post?postId="+postId);
-        } catch (SQLException e) {
+            modelAndView.setViewName("redirect:/show/post?postId=" + blogPost.getPostId());
+        } catch (SQLException | WrongEntityIdException e) {
             logger.warn(e);
             modelAndView.setViewName(ERROR_PAGE.getPageName());
         }

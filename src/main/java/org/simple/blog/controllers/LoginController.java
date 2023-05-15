@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -30,24 +31,21 @@ public class LoginController extends AbstractController{
         this.daoUser = daoUser;
     }
 
-    @RequestMapping(value = "/")
-    @GetMapping
+    @RequestMapping(value = "/", method= RequestMethod.GET)
     public ModelAndView start() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName(LOGIN_PAGE.getPageName());
         return modelAndView;
     }
 
-    @RequestMapping(value = "/logout")
-    @GetMapping
+    @RequestMapping(value = "/logout", method= RequestMethod.GET)
     public ModelAndView logout(HttpServletRequest request) {
         HttpSession session = request.getSession(false);
         session.invalidate();
         return new ModelAndView("redirect:/redirect/login");
     }
 
-    @RequestMapping(value = "/login")
-    @GetMapping
+    @RequestMapping(value = "/login", method= RequestMethod.POST)
     public ModelAndView checkBlogUser(@RequestParam("loginUserName") String email,
                                   @RequestParam("loginPassword") String password,
                                   HttpServletRequest request) {
@@ -74,8 +72,7 @@ public class LoginController extends AbstractController{
         return modelAndView;
     }
 
-    @RequestMapping(value = "/registration")
-    @GetMapping
+    @RequestMapping(value = "/registration", method= RequestMethod.POST)
     public ModelAndView registrationBlogUser(@RequestParam("email") String email,
                                       @RequestParam("firstName") String firstName,
                                       @RequestParam("lastName") String lastName,

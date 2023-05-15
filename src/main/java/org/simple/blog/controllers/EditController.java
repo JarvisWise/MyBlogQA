@@ -12,10 +12,7 @@ import org.simple.blog.tools.custom.exceptions.WrongEntityIdException;
 import org.simple.blog.tools.strings.AttributeName;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.mail.MessagingException;
@@ -48,8 +45,8 @@ public class EditController extends AbstractController{
         this.daoUser = daoUser;
     }
 
-    @RequestMapping(value = "/post/{postId}")
-    @GetMapping
+    //not implemented GUI
+    @RequestMapping(value = "/post/{postId}", method= RequestMethod.POST)
     public ModelAndView editPost(@RequestParam("postName") String postName,
                                  @RequestParam("postText") String postText,
                                   @PathVariable String postId) {
@@ -70,8 +67,8 @@ public class EditController extends AbstractController{
         return modelAndView;
     }
 
-    @RequestMapping(value = "/comment/{commentId}")
-    @GetMapping
+    //not implemented GUI
+    @RequestMapping(value = "/comment/{commentId}", method= RequestMethod.POST)
     public ModelAndView editPost(@RequestParam("commentText") String commentText,
                                  @PathVariable String commentId) {
 
@@ -90,8 +87,7 @@ public class EditController extends AbstractController{
         return modelAndView;
     }
 
-    @RequestMapping(value = "/forgot-password")
-    @GetMapping
+    @RequestMapping(value = "/forgot-password", method= RequestMethod.POST)
     public ModelAndView editUserResetToken(@RequestParam("email") String email) {
         ModelAndView modelAndView = new ModelAndView();
 
@@ -113,8 +109,7 @@ public class EditController extends AbstractController{
         return modelAndView;
     }
 
-    @RequestMapping(value = "/reset-password/{token}")
-    @GetMapping
+    @RequestMapping(value = "/reset-password/{token}", method= RequestMethod.POST)
     public ModelAndView resetUserPassword(@RequestParam("newPassword") String newPassword,
                                        @RequestParam("cPassword") String cPassword,
                                        @PathVariable String token) {
@@ -146,8 +141,7 @@ public class EditController extends AbstractController{
         return modelAndView;
     }
 
-    @RequestMapping(value = "/userCommon/{userId}")
-    @GetMapping
+    @RequestMapping(value = "/userCommon/{userId}", method= RequestMethod.POST)
     public ModelAndView editUserCommon(@RequestParam("firstName") String firstName,
                                        @RequestParam("lastName") String lastName,
                                        @RequestParam("birthday") String birthday,
@@ -159,7 +153,7 @@ public class EditController extends AbstractController{
             daoUser.updateUserCommon(userId, firstName, lastName, birthday);
             BlogUser blogUser = daoUser.getUserById(userId);
             setBaseBlogSessionVariables(request, blogUser);
-            modelAndView.setViewName("redirect:/show/blog-profile?userId=" + userId);
+            modelAndView.setViewName("redirect:/show/blog-profile?userId=" + blogUser.getUserId());
         } catch (SQLException | WrongEntityIdException e) {
             logger.warn(e);
             modelAndView.setViewName(ERROR_PAGE.getPageName());
@@ -167,8 +161,7 @@ public class EditController extends AbstractController{
         return modelAndView;
     }
 
-    @RequestMapping(value = "/clean-test-user")
-    @GetMapping
+    @RequestMapping(value = "/clean-test-user", method= RequestMethod.GET)
     public ModelAndView editUserCommon(HttpServletRequest request) {
 
         ModelAndView modelAndView = new ModelAndView();
@@ -176,13 +169,7 @@ public class EditController extends AbstractController{
             BlogUser testUser = daoUser.getUserByEmail(LOGIN_USER_EMAIL);
             daoComment.deleteCommentsByUserId(testUser.getUserId());
             daoPost.deletePostsByUserId(testUser.getUserId());
-
-            //field update ??
-            //BlogUser testUser = daoUser.getUserByEmail(LOGIN_USER_EMAIL);
-            //daoUser.updateUserCommon(testUser.getUserId(), USER_F_DEF_NAME, USER_L_DEF_NAME, USER_DEF_AGE);
             daoUser.deleteUserByEmail(REG_USER_EMAIL);
-
-
         } catch (WrongEntityIdException e) {
             logger.warn(e);
 

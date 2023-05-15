@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -41,8 +42,7 @@ public class ShowController extends AbstractController{
         this.daoUser = daoUser;
     }
 
-    @RequestMapping(value = "/post")
-    @GetMapping
+    @RequestMapping(value = "/post", method= RequestMethod.GET)
     public ModelAndView showByPostId(@RequestParam("postId") String postId,
                                      HttpServletRequest request) {
 
@@ -70,8 +70,7 @@ public class ShowController extends AbstractController{
         return modelAndView;
     }
 
-    @RequestMapping(value = "/blog-profile")
-    @GetMapping
+    @RequestMapping(value = "/blog-profile", method= RequestMethod.GET)
     public ModelAndView showByUserId(@RequestParam("userId") String userId,
                                      HttpServletRequest request) {
 
@@ -105,8 +104,7 @@ public class ShowController extends AbstractController{
         return modelAndView;
     }
 
-    @RequestMapping(value = "/post-list")
-    @GetMapping
+    @RequestMapping(value = "/post-list", method= RequestMethod.GET)
     public ModelAndView showPostsList(@RequestParam(required = false) String page,
                                       HttpServletRequest request) {
 

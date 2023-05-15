@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -33,8 +34,7 @@ public class RedirectController extends AbstractController{
         this.daoUser = daoUser;
     }
 
-    @RequestMapping(value = "/add/post")
-    @GetMapping
+    @RequestMapping(value = "/add/post", method= RequestMethod.GET)
     public ModelAndView redirectAddPost(HttpServletRequest request) {
 
         if (!isLogInUserAction(request))
@@ -45,8 +45,7 @@ public class RedirectController extends AbstractController{
         return modelAndView;
     }
 
-    @RequestMapping(value = "/reset-password")
-    @GetMapping
+    @RequestMapping(value = "/reset-password", method= RequestMethod.GET)
     public ModelAndView redirectResetPassword(@RequestParam("token") String token) {
         ModelAndView modelAndView = new ModelAndView();
 
@@ -67,22 +66,19 @@ public class RedirectController extends AbstractController{
         return modelAndView;
     }
 
-    @RequestMapping(value = "/forgot-password")
-    @GetMapping
+    @RequestMapping(value = "/forgot-password", method= RequestMethod.GET)
     public ModelAndView redirectForgotPassword() {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName(PageName.BLOG_FORGOT_PASSWORD_PAGE.getPageName());
         return modelAndView;
     }
 
-    @RequestMapping(value = "/login")
-    @GetMapping
+    @RequestMapping(value = "/login", method= RequestMethod.GET)
     public ModelAndView redirectLogin() {
         return new ModelAndView(PageName.LOGIN_PAGE.getPageName());
     }
 
-    @RequestMapping(value = "/registration")
-    @GetMapping
+    @RequestMapping(value = "/registration", method= RequestMethod.GET)
     public ModelAndView redirectRegistration() {
         return new ModelAndView(PageName.REGISTRATION_PAGE.getPageName());
     }
